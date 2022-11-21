@@ -1,6 +1,8 @@
 What I needed to do? I had a mockup of Figma with landing page and should have done responsive and adaptive react page application ,then have already done Test task for Junior position, use in this task API(but without backend ,it wasn't work) , also use different way to create Pagination, I have created all styles with help sass preprocessor :) I`ve used yarn package manager instead of nmp manager.
 
-# FIGMA Mockup https://www.figma.com/file/RH8vWb5CQ9NLm7iRgU4AeT/Test-Task-FE-ALLab?node-id=1%3A480&t=xmXk8W5NeejRNZcn-0
+# FIGMA Mockup 
+https://www.figma.com/file/RH8vWb5CQ9NLm7iRgU4AeT/Test-Task-FE-ALLab?node-id=1%3A480&t=xmXk8W5NeejRNZcn-0
+![20221121_214635](https://user-images.githubusercontent.com/79521676/203145377-89068144-dc73-46d5-8ec0-1976c5914fe7.gif)
 
 # Getting Started with Create React App
 
