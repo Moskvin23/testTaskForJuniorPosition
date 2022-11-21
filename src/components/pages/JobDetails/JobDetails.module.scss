@@ -1,0 +1,54 @@
+.container {
+    width: 650px;
+    padding-left: 250px;
+    padding-top: 3%;
+    
+    .mainContent {
+        .header {
+            .columnHeader {
+                display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .headerTitle {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                font-size: 28px;
+                color: #3A4562;
+                letter-spacing: 0.413333px;
+            }
+
+            .headerSaveList{
+                display: flex;
+                align-items: center;
+                .bookmarkLogo{
+                    width: 16px;
+                    height: 20px;
+                    padding-right: 10px;
+                }
+            }
+                .headerShare {
+                    display: flex;
+                    align-items: center;
+                    .shareIcon {
+                        width: 18px;
+                        height: 20px;
+                        padding-right: 10px;
+                    }
+                }
+            }
+            .buttonHeader {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            }
+        }
+
+    }
+    .locationBlock{
+        background-color: rgba(42, 48, 71, 1);
+        width: 400px;
+        height: 430px;
+        border-radius: 8px;
+    }
+}

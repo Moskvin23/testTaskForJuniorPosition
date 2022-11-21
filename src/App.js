@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import React, { useEffect, useState } from 'react';
+import MainBlock from './components/pages/JobListFirstPage/MainBlock';
+import JobDetails from './components/pages/JobDetails/JobDetails';
+import dataBase from './API/dataBase';
+import getJobList from './API/api';
 
-function App() {
+
+const App = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+		getJobList()
+			.then((data) => {
+				console.log(data);
+				setData(data);
+			})
+			.catch((err) => {
+				console.error(err);
+			});
+	}, []);
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<MainBlock list={data} />}></Route>
+        <Route exact path="/jobs" element={<MainBlock list={data}/>}></Route>
+      <Route path="/jobDetails/:id" element={<JobDetails list={data} />}></Route>
+        </Routes>
+      </Router>
+    
+  )
 }
 
 export default App;

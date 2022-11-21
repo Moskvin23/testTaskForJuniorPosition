@@ -1,0 +1,232 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+     background-color: #E6E9F2;
+}
+
+@media (max-width: 1200px){
+    .container {
+        
+        width: 100vw;
+        .content {
+            width: 90vw;
+            height: 186px;
+            .mainNameUniversity {
+                width: 590px;
+            }
+        }
+        
+    }
+}
+@media (max-width: 992px){
+    .container {
+        
+        width: 100vw;
+        .content {
+            height: 196px;
+        }
+        .secondPartMainNameUni{
+            display: none;
+        }
+       
+       
+    }
+ 
+}
+@media (max-width: 767px){
+    .container {
+        max-width: 100vw;
+        .content {
+            
+            height: 206px;
+
+            .mainNameUniversity {
+                width: 450px;
+                padding-bottom: 20px;
+            }
+        }
+        
+        .secondPartMainNameUni{
+            display: none;
+        }
+        .bookmark{
+            display: none;
+        }
+       
+    }
+}
+
+@media (max-width: 600px){
+    .container {
+        max-width: 99vw;
+        .content {
+            
+            height: 200px;
+
+            .mainNameUniversity {
+                width: 350px;
+                padding-bottom: 20px;
+            }
+        }
+        
+        .secondPartMainNameUni{
+            display: none;
+        }
+        .bookmark{
+            display: none;
+        }
+       
+    }
+}
+
+
+@media (max-width: 480px){
+    .container {
+        
+        max-width: 100vw;
+        .content {
+            background-color: #E6E9F2;
+            height: 160px;
+            .universityPicture {
+                width: 60px;
+                height: 60px;
+              }
+            .mainNameUniversity {
+                padding-top: 10px;
+                width: 260px;
+            }
+            .mainNameUniversity{
+                font-size: 14px;
+            }
+            .departmentName{
+                font-size: 13px;
+            }
+            .location {
+                font-size: 12px;
+                .locationLogo {
+                    width: 12px;
+                    height: 14px;
+               }
+            }
+        }
+        
+        .secondPartMainNameUni{
+            display: none;
+        }
+        .bookmark{
+            display: none;
+        }
+       
+    }
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 9px;
+    width: 90vw;
+    height: 164px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.12) 3px 1px 7px;
+    padding-left: 16px;
+
+    .containerContent {
+        display: flex;
+        align-items: center;
+        .uniPic {
+            padding-right: 26px;
+            padding-bottom: 30px;
+        }
+       }
+    .mainNameUniversity{
+        width: 900px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        color: #3A4562;
+        display: flex;
+        flex-direction: column;
+        gap:8px;
+    }
+
+    .universityPicture {
+      width: 85px;
+      height: 85px;
+      border-radius: 50%;
+     
+    }
+    
+   
+    .departmentName{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #878D9D;
+        letter-spacing: 0.23619px;
+    }
+    .location {
+        display: flex;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #878D9D;
+        letter-spacing: 0.24px;
+        padding-top: 8px;
+        
+        
+        .locationLogo {
+            width: 13px;
+            height: 18px;
+            padding-right: 2px;
+            
+        }
+
+    }
+    .selectedPart {
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 0.1px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 150px;
+        padding-right: 16px;
+        text-align: right;
+        align-items: flex-end;
+        
+
+        .bookmark {
+            width: 16px;
+            height: 20px;
+            padding-right: 8px;
+            padding-top: 29px;
+            cursor: pointer;
+        }
+
+        .posted {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            color: #878D9D;
+            letter-spacing: 0.1px;
+            padding-bottom: 24px;
+            
+        }
+        // @media (max-width: 767px){
+        //     .posted {
+        //         font-family: 'Montserrat', sans-serif;
+        //         font-weight: 300;
+        //         font-size: 15px;
+        //         color: #878D9D;
+        //         letter-spacing: 0.1px;
+        //         display: flex;
+        //         align-items: start;
+        //     }
+        // }
+
+    }
+   }
+   
